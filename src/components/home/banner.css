@@ -1,0 +1,14 @@
+.afterline::after{
+    content: '';
+    width: 30%;
+    height: 2px;
+    position: absolute; 
+    left: 13%;
+    background: #000000;
+}
+
+@media screen and (max-width: 768px) {
+    .afterline::after{
+        display: none;
+    }
+  }
