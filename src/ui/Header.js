@@ -45,7 +45,7 @@ useEffect(() => {
     </button>
   </div>
 
-    <div className={` ${mobileMenuOpen ? "max-[769px]:twl-block max-[769px]:twl-duration-200 max-[769px]:twl-ease-out  " : "max-[769px]:twl-hidden max-[769px]:twl-duration-100 max-[769px]:twl-ease-in"} max-[769px]:twl-items-center max-[769px]:twl-justify-between twl-w-full max-[769px]:twl-order-1 max-[769px]:twl-w-full max-[769px]:twl-columns-auto max-[769px]:twl-col-span-3 navi twl-inline-block twl-columns-5 twl-col-span-2 twl-float-right twl-uppercase`}>
+    <div className={` ${mobileMenuOpen ? "max-[769px]:twl-block max-[769px]:twl-duration-200 max-[769px]:twl-ease-out  " : "max-[769px]:twl-hidden max-[769px]:twl-duration-100 max-[769px]:twl-ease-in"} max-[769px]:twl-items-center max-[769px]:twl-justify-between twl-w-full max-[769px]:twl-order-1 max-[769px]:twl-w-full max-[769px]:twl-columns-auto max-[769px]:twl-col-span-3 navi twl-inline-block twl-columns-6 twl-col-span-2 twl-float-right twl-uppercase`}>
 
     <ul className='max-[769px]:twl-w-full max-[769px]:twl-bg-black max-[769px]:twl-flex-row  max-[769px]:twl-mt-0 max-[769px]:twl-border-0 dark:twl-bg-gray-800 max-[769px]:twl-bg-gray-900 max-[769px]:twl-text-left'>
         <li className='twl-py-2 twl-border-b twl-border-bocolor'>
@@ -62,6 +62,9 @@ useEffect(() => {
         </li>
         <li className='twl-py-2'>
         <HashLink className='max-[769px]:twl-text-base max-[769px]:twl-font-medium max-[769px]:twl-text-white twl-font-semibold hover:twl-text-purpel' to="/#contact">Contact</HashLink>
+        </li>
+        <li className='twl-py-2 twl-border-b twl-border-bocolor'>
+        <NavLink className={({isActive})=> (isActive ? 'max-[769px]:twl-text-base max-[769px]:twl-font-medium  max-[769px]:twl-text-white active twl-font-semibold [&.active]:twl-text-purpel hover:twl-text-purpel' :'max-[769px]:twl-text-base max-[769px]:twl-font-medium max-[769px]:twl-text-white twl-font-semibold hover:twl-text-purpel')} to="/document">Document</NavLink>
         </li>
      </ul>
 
